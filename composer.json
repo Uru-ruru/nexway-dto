@@ -1,0 +1,41 @@
+{
+  "name": "uru-ruru/nexway-dto",
+  "description": "DTOs for NexWay integrations",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alexander Petrov",
+      "email": "info@uru-ru.ru"
+    }
+  ],
+  "homepage": "https://github.com/Uru-ruru/nexway-dto",
+  "keywords": [
+    "nexway",
+    "models",
+    "dto",
+    "integration"
+  ],
+  "require": {
+    "php": ">=8.1",
+    "ext-json": "*",
+    "illuminate/support": "^v10.0.0",
+    "php-curl-class/php-curl-class": "^v10.0.0"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "friendsofphp/php-cs-fixer": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Uru\\NexWayDTO\\": "src/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "scripts": {
+    "php-cs-fixer-dry-run": "php vendor/bin/php-cs-fixer fix --verbose --dry-run --diff --allow-risky=yes",
+    "php-cs-fixer": "php vendor/bin/php-cs-fixer fix --verbose --allow-risky=yes"
+  }
+}
