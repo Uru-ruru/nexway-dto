@@ -1,13 +1,13 @@
-[![Latest Stable Version](https://poser.pugx.org/uru/nexway-dto/v)](//packagist.org/packages/uru/nexway-dto)
-[![Total Downloads](https://poser.pugx.org/uru/nexway-dto/downloads)](//packagist.org/packages/uru/nexway-dto)
-[![Latest Unstable Version](https://poser.pugx.org/uru/nexway-dto/v/unstable)](//packagist.org/packages/uru/nexway-dto)
-[![License](https://poser.pugx.org/uru/nexway-dto/license)](//packagist.org/packages/uru/nexway-dto)
+[![Latest Stable Version](https://poser.pugx.org/uru-ruru/nexway-dto/v)](//packagist.org/packages/uru-ruru/nexway-dtoo)
+[![Total Downloads](https://poser.pugx.org/uru-ruru/nexway-dto/downloads)](//packagist.org/packages/uru-ruru/nexway-dto)
+[![Latest Unstable Version](https://poser.pugx.org/uru-ruru/nexway-dto/v/unstable)](//packagist.org/packages/uru-ruru/nexway-dto)
+[![License](https://poser.pugx.org/uru-ruru/nexway-dto/license)](//packagist.org/packages/uru-ruru/nexway-dto)
 
 # Models for NexWay integrations
 Описание API - https://apidoc.nexway.store/docs/category/api-guides/index.html
 ## Установка
 ```shell
-composer require uru/nexway-dto
+composer require uru-ruru/nexway-dto
 ```
 ## Использование
 ### Добавление или обновление продукта:
