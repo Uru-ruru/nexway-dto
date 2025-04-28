@@ -91,10 +91,6 @@ composer require uru-ruru/nexway-dto
         foreach ($order->getBasket()->getBasketItems() as $basketItem) {
             /** @var BasketItem $basketItem */
             $variant = $basketItem->getVariantComplex()->getVariant();
-            /*
-             * Не будем в ДР передавать позиции СМУА. У нас подписка будет в самом продукте
-             * Если это отдельная подписка для старого заказа, то придется создать
-             */
             if ($variant->isSubscribe() && !$basketItem->getPropertySmuaId()) {
                 continue;
             }
