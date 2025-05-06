@@ -7,11 +7,13 @@ use Uru\NexWayDTO\BaseDtoRequest;
 class ExternalContext extends BaseDtoRequest
 {
     protected string $orderId = self::FIELD_NOT_SET;
+    protected string $subscribeId = self::FIELD_NOT_SET;
 
     /**
      * @var BasketItems[]
      */
     protected array $basketItems = [];
+    protected string $customData = self::FIELD_NOT_SET;
 
     public function setOrderId(string $orderId): void
     {
@@ -37,4 +39,16 @@ class ExternalContext extends BaseDtoRequest
 
         return $this->filterUnsetFields($data);
     }
+
+    public function setSubscribeId(string $subscribeId): void
+    {
+        $this->subscribeId = $subscribeId;
+    }
+
+    public function setCustomData(string $customData): void
+    {
+        $this->customData = $customData;
+    }
+
+
 }
