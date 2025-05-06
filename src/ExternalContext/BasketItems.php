@@ -10,6 +10,8 @@ class BasketItems extends BaseDtoRequest
     protected string $quantity = self::FIELD_NOT_SET;
     protected string $price = self::FIELD_NOT_SET;
 
+    protected string $subscribeId = self::FIELD_NOT_SET;
+
     public function setItemId(string $itemId): void
     {
         $this->itemId = $itemId;
@@ -25,12 +27,18 @@ class BasketItems extends BaseDtoRequest
         $this->price = $price;
     }
 
+    public function setSubscribeId(string $subscribeId): void
+    {
+        $this->subscribeId = $subscribeId;
+    }
+
     public function jsonSerialize(): array
     {
         $data = [
             'itemId' => $this->itemId,
             'quantity' => $this->quantity,
             'price' => $this->price,
+            'subscribeId' => $this->subscribeId,
         ];
 
         return $this->filterUnsetFields($data);
